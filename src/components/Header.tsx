@@ -1,16 +1,50 @@
+'use client';
+
+import Link from 'next/link';
 import React from 'react';
+import { usePathname } from 'next/navigation';
 
 export const Header = () => {
+  const pathname = usePathname();
+
   return (
-    <div className=" lg:h-20 items-center w-full flex justify-center">
-      <div className="  grid grid-cols-6 gap-4 w-full items">
+    <div className=" lg:h-20 w-full items-center  flex justify-center sticky top-0 backdrop-blur-md bg-[#212224]/30 rounded-b-xl px-72">
+      <div className="  grid grid-cols-6 gap-4 w-full items ">
         <div className="  flex justify-center items-center">Logo</div>
         <div className=" col-start-2 col-span-4 items-center flex justify-center">
           <ul className="  flex justify-center space-x-16">
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <li>
+              <Link
+                className={`link ${pathname === '/' ? 'text-yellow-500	' : ''}`}
+                href="/"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={`link ${pathname === '/works' ? 'text-yellow-500	' : ''}`}
+                href="/works"
+              >
+                Works
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={`link ${pathname === '/about' ? 'text-yellow-500	' : ''}`}
+                href="/about"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={`link ${pathname === '/resume' ? 'text-yellow-500	' : ''}`}
+                href="/resume"
+              >
+                Resume
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="  flex justify-end">

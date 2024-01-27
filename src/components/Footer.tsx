@@ -6,8 +6,8 @@ import { FaGithub } from 'react-icons/fa';
 
 export const Footer = () => {
   return (
-    <div className="lg:h-60	 items-center w-full grid">
-      <div className="w-full h-full grid grid-cols-5 p-2 gap-2">
+    <div className="  lg:h-60	 items-center w-full grid">
+      <div className=" w-full h-full grid grid-cols-5 p-2 gap-2">
         <div className="  col-span-2 flex justify-end items-center px-6">
           LOGO
         </div>
