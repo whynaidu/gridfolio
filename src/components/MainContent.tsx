@@ -2,8 +2,8 @@ import React from 'react';
 
 export const MainContent = () => {
   return (
-    <div className="h-lvh	 w-full flex justify-center py-16">
-      <div className=" grid grid-cols-2 w-full gap-4">
+    <div className="h-lvh  w-full flex justify-center py-16">
+      <div className="grid grid-cols-2 w-full gap-4">
         <div className=" w-full grid grid-row-3 gap-4">
           <div className="flex items-center justify-center rounded-3xl bg-[#333639]">
             1
