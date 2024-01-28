@@ -45,6 +45,14 @@ export const Header = () => {
                 Resume
               </Link>
             </li>
+            <li>
+              <Link
+                className={`link ${pathname === '/contact' ? 'text-yellow-500	' : ''}`}
+                href="/contact"
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="  flex justify-end">

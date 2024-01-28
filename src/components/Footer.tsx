@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { CiLinkedin } from 'react-icons/ci';
 import { CiTwitter } from 'react-icons/ci';
@@ -6,17 +7,28 @@ import { FaGithub } from 'react-icons/fa';
 
 export const Footer = () => {
   return (
-    <div className="  lg:h-60	 items-center w-full grid">
-      <div className=" w-full h-full grid grid-cols-5 p-2 gap-2">
-        <div className="  col-span-2 flex justify-end items-center px-6">
+    <div className=" lg:h-60	 items-center w-full grid">
+      <div className="  w-full h-full grid grid-cols-7 p-2 gap-2">
+        <div className=" ] col-span-3 flex justify-end items-center px-6">
           LOGO
         </div>
         <div className="col-span-3 flex justify-start items-center ">
           <ul className="flex justify-center space-x-10 items-center mx-6">
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/works">Works</Link>
+            </li>
+            <li>
+              <Link href="/about">About</Link>
+            </li>
+            <li>
+              <Link href="/resume">Resume</Link>
+            </li>
+            <li>
+              <Link href="/resume">Contact</Link>
+            </li>
           </ul>
         </div>
       </div>

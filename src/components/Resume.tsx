@@ -3,8 +3,7 @@ import { CiLinkedin } from 'react-icons/ci';
 import { CiTwitter } from 'react-icons/ci';
 import { FaInstagram } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
-import { TbCircleArrowUpRightFilled } from "react-icons/tb";
-
+import { TbCircleArrowUpRightFilled } from 'react-icons/tb';
 
 export const Resume = () => {
   return (
@@ -16,36 +15,33 @@ export const Resume = () => {
           </div>
           <div className="bg-[#333639] h-max text-4xl items-center justify-start rounded-3xl p-8 space-y-2">
             <div className="flex space-x-4 items-center leading-none ">
-              <FaGithub  size={70} />
+              <FaGithub size={70} />
               <p>Github </p>
-              <div className=' flex justify-end w-full'>
-              <TbCircleArrowUpRightFilled/>
-                </div>
+              <div className=" flex justify-end w-full">
+                <TbCircleArrowUpRightFilled />
+              </div>
             </div>
             <div className="flex space-x-4 items-center leading-none ">
-              <CiLinkedin  size={70}/>
+              <CiLinkedin size={70} />
 
               <p>Linkedin </p>
-              <div className=' flex justify-end w-full'>
-              <TbCircleArrowUpRightFilled/>
-                </div>
-
+              <div className=" flex justify-end w-full">
+                <TbCircleArrowUpRightFilled />
+              </div>
             </div>
             <div className="flex space-x-4 items-center leading-none ">
               <CiTwitter size={70} />
               <p>Twitter </p>
-              <div className=' flex justify-end w-full'>
-              <TbCircleArrowUpRightFilled/>
-                </div>
-
+              <div className=" flex justify-end w-full">
+                <TbCircleArrowUpRightFilled />
+              </div>
             </div>
             <div className="flex space-x-4 items-center leading-none ">
               <FaInstagram size={70} />
               <p>Instagram </p>
-              <div className=' flex justify-end w-full'>
-              <TbCircleArrowUpRightFilled/>
-                </div>
-
+              <div className=" flex justify-end w-full">
+                <TbCircleArrowUpRightFilled />
+              </div>
             </div>
           </div>
         </div>
