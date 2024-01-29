@@ -30,30 +30,20 @@ export const Contact = () => {
             </div>
           </div>
           <div className=" flex items-center  w-full  justify-center rounded-3xl  bg-[#333639] p-8 col-span-3">
-            <form action="" className="w-full h-fit space-y-4">
+            <form action="" className="w-full h-fit space-y-6">
               <div className=" space-y-2  w-full  h-fit ">
-                <label
-                  className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  htmlFor="first_name"
-                >
-                  First Name
-                </label>
+               
                 <input
-                  className="flex h-10 w-full rounded-md border border-white bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-white dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                  className="flex h-10 w-full rounded-md  bg-[#4D555B] px-3 py-7 text-xl placeholder:text-gray-400 focus:outline-none   disabled:cursor-not-allowed disabled:opacity-50 dark: dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                   type="text"
                   id="first_name"
                   placeholder="First Name"
                 />
               </div>
               <div className=" space-y-2  w-full  h-fit">
-                <label
-                  className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  htmlFor="email"
-                >
-                  Email
-                </label>
+             
                 <input
-                  className="flex h-10 w-full rounded-md border border-white bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-white dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                  className="flex h-10 w-full rounded-md   bg-[#4D555B] px-3 py-7 text-xl placeholder:text-gray-400 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark: dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                   type="text"
                   id="email"
                   placeholder="Email"
@@ -61,18 +51,14 @@ export const Contact = () => {
               </div>
 
               <div className="space-y-2  w-full  h-fit">
-                <label
-                  className="text-sm font-medium leading-none text-white peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  htmlFor="message"
-                >
-                  Message
-                </label>
+
                 <textarea
-                  className="flex h-fit w-full rounded-md border border-white bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-white dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                  className="flex h-fit w-full rounded-md p-4  bg-[#4D555B] px-3 py-2 text-xl placeholder:text-gray-400 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark: dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                   id="message"
                   placeholder="Leave us a message"
-                  rows={5}
-                />
+                  rows={7}
+                  style={{ resize: 'none' }}
+                  />
               </div>
 
               <button
