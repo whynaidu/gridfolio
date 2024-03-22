@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { CiLinkedin, CiTwitter } from 'react-icons/ci';
 import { FaGithub, FaInstagram } from 'react-icons/fa';
@@ -13,7 +14,7 @@ export const Contact = () => {
                 <p className="text-5xl mb-8 ">Get in Touch ✨</p>
                 <p className="text-2xl w-10/12">
                   I’m always open to collaborate on a project or hear about an
-                  opportunity!{' '}
+                  opportunity
                 </p>
               </div>
               <div className=" flex items-center">
@@ -22,17 +23,28 @@ export const Contact = () => {
                 </p>
               </div>
               <div className=" flex items-end text-5xl space-x-14 ">
-                <FaGithub />
-                <CiLinkedin />
-                <CiTwitter />
-                <FaInstagram />
+                <Link href="https://github.com/whynaidu">
+                  {' '}
+                  <FaGithub />
+                </Link>
+                <Link href="https://www.linkedin.com/in/whynaidu/">
+                  {' '}
+                  <CiLinkedin />{' '}
+                </Link>
+                <Link href="https://twitter.com/whynaidu">
+                  {' '}
+                  <CiTwitter />{' '}
+                </Link>
+                <Link href="https://www.instagram.com/whynaidu/">
+                  {' '}
+                  <FaInstagram />{' '}
+                </Link>
               </div>
             </div>
           </div>
           <div className=" flex items-center  w-full  justify-center rounded-3xl  bg-[#333639] p-8 col-span-3">
             <form action="" className="w-full h-fit space-y-6">
               <div className=" space-y-2  w-full  h-fit ">
-               
                 <input
                   className="flex h-10 w-full rounded-md  bg-[#4D555B] px-3 py-7 text-xl placeholder:text-gray-400 focus:outline-none   disabled:cursor-not-allowed disabled:opacity-50 dark: dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                   type="text"
@@ -41,7 +53,6 @@ export const Contact = () => {
                 />
               </div>
               <div className=" space-y-2  w-full  h-fit">
-             
                 <input
                   className="flex h-10 w-full rounded-md   bg-[#4D555B] px-3 py-7 text-xl placeholder:text-gray-400 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark: dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                   type="text"
@@ -51,14 +62,13 @@ export const Contact = () => {
               </div>
 
               <div className="space-y-2  w-full  h-fit">
-
                 <textarea
                   className="flex h-fit w-full rounded-md p-4  bg-[#4D555B] px-3 py-2 text-xl placeholder:text-gray-400 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark: dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                   id="message"
                   placeholder="Leave us a message"
-                  rows={7}
+                  rows={5}
                   style={{ resize: 'none' }}
-                  />
+                />
               </div>
 
               <button

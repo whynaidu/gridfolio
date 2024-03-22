@@ -27,16 +27,28 @@ export const Footer = () => {
               <Link href="/resume">Resume</Link>
             </li>
             <li>
-              <Link href="/resume">Contact</Link>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>
       </div>
       <div className=" w-full h-full flex justify-center items-center text-4xl  space-x-8">
-        <FaGithub />
-        <CiLinkedin />
-        <CiTwitter />
-        <FaInstagram />
+        <Link href="https://github.com/whynaidu">
+          {' '}
+          <FaGithub />
+        </Link>
+        <Link href="https://www.linkedin.com/in/whynaidu/">
+          {' '}
+          <CiLinkedin />{' '}
+        </Link>
+        <Link href="https://twitter.com/whynaidu">
+          {' '}
+          <CiTwitter />{' '}
+        </Link>
+        <Link href="https://www.instagram.com/whynaidu/">
+          {' '}
+          <FaInstagram />{' '}
+        </Link>
       </div>
       <div className=" w-full h-full flex justify-center items-center">
         <h1>Made With &#129505; by Vedant Naidu</h1>

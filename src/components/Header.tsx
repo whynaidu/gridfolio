@@ -45,14 +45,6 @@ export const Header = () => {
                 Resume
               </Link>
             </li>
-            <li>
-              <Link
-                className={`link ${pathname === '/contact' ? 'text-yellow-500	' : ''}`}
-                href="/contact"
-              >
-                Contact
-              </Link>
-            </li>
           </ul>
         </div>
         <div className="  flex justify-end">
@@ -60,7 +52,7 @@ export const Header = () => {
             type="button"
             className="rounded-full bg-[#fcfaf4] px-5 py-2 text-sm font-semibold text-black shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
-            Get in Touch
+            <Link href="/contact"> Get in Touch</Link>
           </button>
         </div>
       </div>
